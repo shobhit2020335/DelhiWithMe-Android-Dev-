@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dwm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DWM"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".devotional"
+            android:exported="false" />
+        <activity
+            android:name=".mustvisit"
+            android:exported="false" />
+        <activity
+            android:name=".bus"
+            android:exported="false" />
+        <activity
+            android:name=".railway"
+            android:exported="false" />
+        <activity
+            android:name=".airport"
+            android:exported="false" />
+        <activity
+            android:name=".Mainpageactivity"
+            android:exported="false"
+            android:parentActivityName=".cinemahall" />
+        <activity
+            android:name=".profile"
+            android:exported="false"
+            android:parentActivityName=".home" />
+        <activity
+            android:name=".travel"
+            android:exported="false" />
+        <activity
+            android:name=".local_market"
+            android:exported="false" />
+        <activity
+            android:name=".restaurant"
+            android:exported="false" />
+        <activity
+            android:name=".cinemahall"
+            android:exported="false"
+            android:parentActivityName=".home" />
+        <activity
+            android:name=".mall"
+            android:exported="false" />
+        <activity
+            android:name=".hangout"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+    </application>
+
+</manifest>
