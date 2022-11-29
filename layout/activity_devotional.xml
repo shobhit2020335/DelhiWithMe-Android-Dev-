@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="5dp"
+                        android:padding="1dp"
+                        android:paddingStart="1dp"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="1dp"
+                        android:paddingEnd="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp"
+                        android:text="Qutub Minar"
+                        android:textColor="#000000"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.051"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginEnd="3dp"
+                        android:padding="1dp"
+                        android:paddingStart="1dp"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="1dp"
+                        android:paddingEnd="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp"
+                        android:text="Mehrauli ,Delhi-1100054"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Swipe to see more"
+                        android:textColor="#050505"
+                        android:textSize="23sp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="81dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/address"
+                        app:srcCompat="@drawable/rarr" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                        <LinearLayout
+                            android:id="@+id/shapeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/i1"
+                                android:layout_width="411dp"
+                                android:layout_height="250dp"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/b1"
+                                tools:layout_editor_absoluteX="31dp"
+                                tools:layout_editor_absoluteY="308dp" />
+
+                            <ImageView
+                                android:id="@+id/i2"
+                                android:layout_width="411dp"
+                                android:layout_height="250dp"
+                                android:cropToPadding="false"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/backgrnd"
+                                tools:layout_editor_absoluteX="16dp"
+                                tools:layout_editor_absoluteY="453dp" />
+
+                            <ImageView
+                                android:id="@+id/i3"
+                                android:layout_width="411dp"
+                                android:layout_height="250dp"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/b1"
+                                tools:layout_editor_absoluteX="31dp"
+                                tools:layout_editor_absoluteY="308dp" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:ellipsize="start"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:foregroundGravity="center_vertical|clip_horizontal|center"
+                        android:gravity="center|fill_horizontal"
+                        android:inputType="textMultiLine"
+                        android:text="THis is Qutub Minar .lets go THis is Qutub Minar .lets go TTHis is Qutub Minar .lets goTHis is Qutub MinTHis is Qutub Minar .lets goTHis is Qutub Minar .lets goTHis is Qutub Minar .lets goTHis is Qutub Minar .lets goTHis is Qutub Minar .lets goar .lets goHis is Qutub"
+                        android:textColor="#3d251e"
+                        android:textSize="27sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sname" />
+
+                    <TextView
+                        android:id="@+id/sname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="1dp"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:minHeight="48dp"
+                        android:minLines="1"
+                        android:text="Station Name"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nearestmetro"
+                        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView1" />
+
+                    <TextView
+                        android:id="@+id/nearestmetro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="Nearest Metro Station -"
+                        android:textColor="#020202"
+                        android:textSize="21sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView1" />
+
+                    <ImageView
+                        android:id="@+id/commentBTN"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="25dp"
+                        app:layout_constraintStart_toEndOf="@+id/commentET"
+                        app:layout_constraintTop_toBottomOf="@+id/description"
+                        app:srcCompat="@drawable/pstcmnt" />
+
+                    <EditText
+                        android:id="@+id/commentET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/commentbtn"
+                        android:ems="10"
+                        android:hint="Write A Comment About This Place!"
+                        android:inputType="textUri|textLongMessage|textMultiLine|textPersonName|textImeMultiLine"
+                        android:maxLines="2"
+                        android:minHeight="48dp"
+                        android:textColorHint="#78909C"
+                        android:textSize="21sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="1dp"
+                        app:layout_constraintEnd_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/commentET"
+                        app:srcCompat="@drawable/comment" />
+
+                    <TextView
+                        android:id="@+id/cmmntCOUNT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-7dp"
+                        android:layout_marginEnd="1dp"
+                        android:text="47"
+                        app:layout_constraintEnd_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="11dp"
+                        android:text=" See All Comments:"
+                        android:textSize="25sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/commentET" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/cmmntRV"
+                        android:layout_width="match_parent"
+                        android:layout_height="301dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="3dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2"
+                        app:layout_constraintVertical_bias="1.0">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+
+
