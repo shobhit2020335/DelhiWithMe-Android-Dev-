@@ -42,7 +42,7 @@ public class signup extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase database;
     TextInputEditText mail, password, name;
-    LoadingDialog loadingDialog=new LoadingDialog(signup.this);
+    LoadingDialog loadingDialog = new LoadingDialog(signup.this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,6 +159,7 @@ public class signup extends AppCompatActivity {
             }
         }
     }
+
     private void firebaseauthwithgoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         auth.signInWithCredential(credential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
